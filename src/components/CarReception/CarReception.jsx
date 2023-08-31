@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import styles from './CarReception.module.css';
+import { NavLink } from 'react-router-dom';
 export const CarReception = ({ handleChange, handleSubmit, errors }) => {
 	CarReception.propTypes = {
 		handleChange: PropTypes.func,
@@ -11,6 +12,9 @@ export const CarReception = ({ handleChange, handleSubmit, errors }) => {
 
 	return (
 		<>
+			<Button variant='contained'>
+				<NavLink to='/'>Home</NavLink>
+			</Button>
 			<h2 style={{ margin: '20px auto', textAlign: 'center' }}>Recepción de un automóvil</h2>
 			<form className={styles.FormContainer} onSubmit={handleSubmit}>
 				<TextField

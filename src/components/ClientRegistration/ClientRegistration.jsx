@@ -12,6 +12,7 @@ import {
 } from '@mui/material';
 import styles from './ClientRegistration.module.css';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { NavLink } from 'react-router-dom';
 
 export const ClientRegistration = ({
 	handleChange,
@@ -32,6 +33,9 @@ export const ClientRegistration = ({
 
 	return (
 		<>
+			<Button variant='contained'>
+				<NavLink to='/'>Home</NavLink>
+			</Button>
 			<h2 style={{ margin: '20px auto', textAlign: 'center' }}>Alta de Clientes</h2>
 			<form className={styles.FormContainer} onSubmit={handleSubmit}>
 				<TextField
