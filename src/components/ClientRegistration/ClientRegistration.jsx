@@ -73,15 +73,6 @@ export const ClientRegistration = ({
 					error={errors.usuario ? true : false}
 					helperText={errors.usuario}
 				/>
-				{/* <TextField
-					name='clave'
-					label='Clave'
-					variant='outlined'
-					onChange={handleChange}
-					error={errors.clave ? true : false}
-					helperText={errors.clave}
-					type='password'
-				/> */}
 
 				<FormControl variant='outlined'>
 					<InputLabel>Clave</InputLabel>
